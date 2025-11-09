@@ -1,0 +1,254 @@
+/* PAGE WRAPPER */
+.start-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* HERO SECTION — Full screen only for hero */
+.hero-section {
+  height: 100vh;
+  background-image: url("../assets/fest.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: screen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+/* Keep navbar on top */
+.hero-section nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* HERO CONTENT */
+.hero-content {
+  z-index: 1;
+}
+
+.title {
+  font-size: 5rem;
+  color: whitesmoke;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  -webkit-text-stroke: #000000 1.5px;
+}
+
+.title2 {
+  font-size: 2.5rem;
+  color: #FAEB92;
+  margin-top: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  -webkit-text-stroke: #000000 1px;
+}
+.title2 {
+  font-size: 2.5rem;
+  color: #FAEB92;
+  margin-top: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  -webkit-text-stroke: #000000 1px;
+  font-weight: 700;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideUp 2s ease-out forwards;
+}
+
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  max-width: 600px;
+  color: #92e5fa;
+  margin-top: 10px;
+}
+
+/* BUTTONS */
+.join-btn-big,
+.clg-btn-big {
+  display: inline-block;
+  margin-top: 20px;
+  background: #ff4d6d;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  margin: 10px 5px;
+}
+
+.join-btn-big:hover,
+.clg-btn-big:hover {
+  background: #ff1e4d;
+  color:whitesmoke;
+}
+
+/* CLUBS SECTION */
+.clubs-section {
+  padding: 50px 20px;
+  background: white; /* makes footer not overlap hero */
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .title2 {
+    font-size: 1.5rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* ⭐ HALL OF FAME */
+.hall-of-fame {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #061762, #00827d, #01607d);
+  color: white;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hof-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+.hof-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #f1f1f1;
+}
+
+.hof-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.hof-card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.hof-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #fff;
+  object-fit: cover;
+}
+
+.hof-card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+}
+
+.hof-card p {
+  font-size: 0.95rem;
+  color: #f0f0f0;
+}
+
+.hof-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.publication-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  padding: 60px 20px;
+}
+
+.pub-card {
+  max-width: 800px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pub-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.pub-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.pub-desc {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.pub-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pub-btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: #3498db;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.pub-btn:hover {
+  background: #2980b9;
+  transform: scale(1.05);
+}
+
+.pub-btn.secondary {
+  background: #2ecc71;
+}
+
+.pub-btn.secondary:hover {
+  background: #27ae60;
+}
