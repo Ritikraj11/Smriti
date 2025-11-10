@@ -48,7 +48,7 @@ export default function Start() {
             Celebrating diversity, creativity, and togetherness — join us in
             spreading colors of joy and culture!
           </p>
-          <a href="/join" className="join-btn-big">
+          <a href="/join" className="join-btn-big" target="blank">
             Join Us
           </a>
           <a
