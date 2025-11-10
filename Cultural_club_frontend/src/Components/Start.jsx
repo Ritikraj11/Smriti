@@ -49,7 +49,9 @@ export default function Start() {
             Celebrating diversity, creativity, and togetherness — join us in
             spreading colors of joy and culture!
           </p>
-          <link to="/join" className="join-btn-big">Join Us</link>
+          <Link to="/join" className="join-btn-big">
+            Join Us
+          </Link>
           <a
             href="https://www.gecmadhubani.ac.in/"
             target="_blank"
