@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 import "./Start.css";
 import Clubs from "./Clubs";
 import About from "./About";
@@ -48,9 +49,7 @@ export default function Start() {
             Celebrating diversity, creativity, and togetherness — join us in
             spreading colors of joy and culture!
           </p>
-          <a href="/join" className="join-btn-big" target="blank">
-            Join Us
-          </a>
+          <link to="/join" className="join-btn-big">Join Us</link>
           <a
             href="https://www.gecmadhubani.ac.in/"
             target="_blank"
