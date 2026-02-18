@@ -19,7 +19,7 @@ export default function Footer() {
           <h3>Quick Links</h3>
           <ul>
             <li><a href="/about">About Us</a></li>
-            <li><a href="/clubs">Our Clubs</a></li>
+            <li><a href="/Clubs">Our Clubs</a></li>
             <li><a href="/events">Events</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
